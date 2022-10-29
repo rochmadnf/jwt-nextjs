@@ -20,26 +20,7 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <ul className="navbar-nav me-auto mb-2 mb-md-0">
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="https://santrikoding.com/artikel"
-                  target="_blank"
-                >
-                  POSTS
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="https://santrikoding.com"
-                  target="_blank"
-                >
-                  SANTRIKODING
-                </a>
-              </li>
-            </ul>
+            <ul className="navbar-nav me-auto mb-2 mb-md-0"></ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link href="/register">

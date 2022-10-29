@@ -17,14 +17,6 @@ export default function Home() {
                   Belajar Authentication Laravel JWT dengan Next.js di
                   SantriKoding.com
                 </p>
-                <a
-                  href="https://santrikoding.com/kategori/next-js"
-                  target="_blank"
-                  className="btn btn-primary btn-lg"
-                  type="button"
-                >
-                  Selengkapnya
-                </a>
               </div>
             </div>
           </div>
