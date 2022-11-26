@@ -17,8 +17,6 @@ import { Layout } from "../components";
 function Dashboard() {
   //get token
   const token = getCookie("jwt_santri_session");
-  console.log(token);
-
   //state user
   const [user, setUser] = useState({});
 
@@ -59,6 +57,15 @@ function Dashboard() {
     });
   };
 
+  const testHandler = async () => {
+    try {
+      const { data } = await axios.get(`api/myrole`);
+      alert(data.message);
+    } catch (error) {
+      alert(`You're Guest. Be Patient 🤣`);
+    }
+  };
+
   return (
     <Layout>
       <Head>
@@ -77,6 +84,12 @@ function Dashboard() {
                   className="btn btn-md btn-danger"
                 >
                   LOGOUT
+                </button>
+                <button
+                  className="btn btn-md btn-secondary mx-4"
+                  onClick={testHandler}
+                >
+                  Test Role
                 </button>
               </div>
             </div>
